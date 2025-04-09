@@ -1,0 +1,93 @@
+.locations-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.locations-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.location-card {
+  background-color: #f8f7ff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+}
+
+.location-icon {
+  font-size: 32px;
+  color: #6c5ce7;
+  margin-bottom: 8px;
+}
+
+.location-card h3 {
+  font-size: 20px;
+  color: #2d3436;
+  margin: 0;
+}
+
+.location-card p {
+  color: #636e72;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.view-details, .find-map {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.view-details {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.find-map {
+  background-color: transparent;
+  color: #6c5ce7;
+}
+
+.view-details:hover {
+  background-color: #5f51e8;
+}
+
+.find-map:hover {
+  background-color: #f0edff;
+}
+
+@media (max-width: 768px) {
+  .locations-container {
+    padding: 20px;
+  }
+
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+}

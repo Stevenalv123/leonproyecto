@@ -4,47 +4,38 @@ import './navbar.css';
 
 const Navbar = () => {
   return (
-    <div className='div'>
-        <nav className="navbar">
-            <div className="navbar-container">
-                <a to="/" className="navbar-logo">
-                Leon Explorer
-                </a>
-                <ul className="nav-menu">
-                <li className="nav-item">
-                    <a to="/" className="nav-link">
-                    <Icon icon="mdi-light:home" className="nav-icon" />
-                    Home
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a to="/about" className="nav-link">
-                    <Icon icon="mdi:explore" className="nav-icon" />
-                    Explorer
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a to="/services" className="nav-link">
-                    <Icon icon="mdi:business" className="nav-icon" />
-                    Businesses
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a to="/contact" className="nav-link">
-                    <Icon icon="mdi:head-heart-outline" className="nav-icon" />
-                    Culture
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a to="/contact" className="nav-link">
-                    <Icon icon="mdi-light:bank" className="nav-icon" />
-                    Mythical places
-                    </a>
-                </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+    <nav className="navbar">
+      <div className="nav-left">
+        <a href="/" className="nav-brand">Tierra Leonesa</a>
+        <div className="nav-links">
+          <a href="/home" className="nav-link">
+            <Icon icon="mdi:home" />
+            Inicio
+          </a>
+          <a href="/explore" className="nav-link">
+            <Icon icon="mdi:compass" />
+            Explorar
+          </a>
+          <a href="/businesses" className="nav-link">
+            <Icon icon="mdi:store" />
+            Negocios
+          </a>
+          <a href="/culture" className="nav-link">
+            <Icon icon="mdi:bank" />
+            Cultura
+          </a>
+          <a href="/mythical" className="nav-link">
+            <Icon icon="mdi:star" />
+            Lugares Miticos
+          </a>
+        </div>
+      </div>
+      <div className="nav-right">
+        <a href="/login" className="nav-link">Iniciar Sesion</a>
+        <a href="/signup" className="nav-link signup">Registrarse</a>
+        <a href="/plan" className="nav-link plan-visit">Planea tu visita</a>
+      </div>
+    </nav>
   );
 };
 

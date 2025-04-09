@@ -1,0 +1,82 @@
+.chatbot-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.chatbot-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.guide-card {
+  background-color: #f8f7ff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.guide-icon {
+  background-color: #6c5ce7;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.guide-content {
+  flex: 1;
+}
+
+.guide-content h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.guide-content p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.start-chat {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.start-chat:hover {
+  background-color: #5f51e8;
+}
+
+@media (max-width: 768px) {
+  .chatbot-container {
+    padding: 16px;
+  }
+
+  .guide-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .guide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,80 @@
+.cultural-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cultural-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.cultural-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.cultural-card {
+  background-color: #f8f7ff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.icon-wrapper {
+  width: 40px;
+  height: 40px;
+  background-color: #f0edff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cultural-icon {
+  font-size: 24px;
+  color: #6c5ce7;
+}
+
+.cultural-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.cultural-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.learn-more {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: fit-content;
+}
+
+.learn-more:hover {
+  background-color: #5f51e8;
+}
+
+@media (max-width: 768px) {
+  .cultural-container {
+    padding: 20px;
+  }
+
+  .cultural-grid {
+    grid-template-columns: 1fr;
+  }
+}

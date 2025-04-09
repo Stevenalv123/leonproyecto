@@ -1,85 +1,86 @@
-/* General */
-.div {
-    display: flex;
-    border-color: #0A0A0A;
-    border-width: 1px;
-    border-style: solid;
-    width: 100%;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-brand {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.signup {
+  color: #6c5ce7;
+}
+
+.plan-visit {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.plan-visit:hover {
+  background-color: #5f51e8;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
   }
   
-  /* Navbar */
-  .navbar {
-    background-color: #FFFF;  /* Fondo blanco */
-    height: 80px;             /* Altura del navbar */
-    width: 100%;              /* 100% de ancho */
-    position: fixed;          /* Fijo en la parte superior */
-    top: 0;
-    left: 0;
-    z-index: 999;             /* Asegura que se quede encima de otros elementos */
-    display: flex;            /* Usamos flexbox */
-    justify-content: space-between; /* Distribuir los elementos con espacio entre */
-    align-items: center;      /* Centrar verticalmente */
-    padding: 0 20px;          /* Espaciado interno */
-  }
-  
-  /* Contenedor del Navbar */
-  .navbar-container {
-    display: flex;
-    justify-content: space-between; /* Espacios entre los elementos */
-    align-items: center;           /* Centrar verticalmente */
-    width: 100%;                   /* Tomar todo el ancho */
-  }
-  
-  /* Logo */
-  .navbar-logo {
-    color: #0A0A0A;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+  .nav-right {
     gap: 8px;
   }
   
-  /* Menú de navegación */
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Item del menú */
-  .nav-item {
-    margin: 0 15px;
-    color: #0A0A0A;
-  }
-  
-  /* Enlace de navegación */
   .nav-link {
-    color: #0A0A0A;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 8px 12px;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    padding: 6px 10px;
+    font-size: 13px;
   }
-  
-  /* Efecto hover */
-  .nav-link:hover {
-    color: #00bcd4;
-  }
-  
-  /* Icono de navegación */
-  .nav-icon {
-    font-size: 1.4rem;
-  }
-  
-  /* Icono del logo */
-  .logo-icon {
-    font-size: 2.2rem;
-  }
-  
+}
