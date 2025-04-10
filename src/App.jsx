@@ -1,26 +1,19 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
-import Navbar from './components/navbar/navbar'
-import Map from './components/mapa/map';
-import Location from './components/locations/location';
-import Intro from './components/introduction/intro';
-import Locales from './components/locales/locales';
-import Cultura from './components/cultura/cultura';
-import Places from './components/places/places';
-import Chatbot from './components/chatbot/chatbot';
+import Home from './pages/home';
+import Tienda from './components/tienda/tienda';
+import Navbar from './components/navbar/navbar';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Intro/>
-      <Map/>
-      <Location/>
-      <Locales/>
-      <Cultura/>
-      <Places/>
-      <Chatbot/>
-    </div>
+    <Router>
+      <Navbar/>
+      <Routes>  
+        <Route path="/" element={<Home />} />
+        <Route path="/tienda" element={<Tienda />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,82 +1,115 @@
-.chatbot-container {
-  padding: 24px;
-  max-width: 1200px;
-  margin: 0 auto;
+.chatbot-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
-.chatbot-container h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 24px;
-}
-
-.guide-card {
-  background-color: #f8f7ff;
-  border-radius: 12px;
-  padding: 24px;
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.guide-icon {
+.chat-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
   background-color: #6c5ce7;
   color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  border: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-.guide-content {
+.chatbot-container {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 350px;
+  height: 500px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 16px;
+  background: #6c5ce7;
+  color: white;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-messages {
   flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.guide-content h3 {
-  font-size: 18px;
+.message {
+  padding: 10px 16px;
+  border-radius: 16px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message.user {
+  background: #6c5ce7;
+  color: white;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background: #f0f0f0;
   color: #333;
-  margin: 0 0 8px 0;
+  align-self: flex-start;
 }
 
-.guide-content p {
-  color: #666;
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 0 0 20px 0;
+.chat-input {
+  padding: 16px;
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid #eee;
 }
 
-.start-chat {
-  background-color: #6c5ce7;
+.chat-input input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+.chat-input button {
+  background: #6c5ce7;
   color: white;
   border: none;
-  border-radius: 8px;
-  padding: 8px 20px;
-  font-size: 14px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.start-chat:hover {
-  background-color: #5f51e8;
 }
 
 @media (max-width: 768px) {
   .chatbot-container {
-    padding: 16px;
-  }
-
-  .guide-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .guide-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: calc(100vw - 40px);
+    height: 60vh;
+    bottom: 80px;
   }
 }

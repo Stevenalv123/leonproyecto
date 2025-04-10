@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import './navbar.css';
 
@@ -6,28 +7,28 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <a href="/" className="nav-brand">Tierra Leonesa</a>
+        <Link to="/" className="nav-brand">Tierra Leonesa</Link>
         <div className="nav-links">
-          <a href="/home" className="nav-link">
+          <Link to="/" className="nav-link">
             <Icon icon="mdi:home" />
             Inicio
-          </a>
-          <a href="/explore" className="nav-link">
+          </Link>
+          <Link to="/explore" className="nav-link">
             <Icon icon="mdi:compass" />
             Explorar
-          </a>
-          <a href="/businesses" className="nav-link">
+          </Link>
+          <Link to="/tienda" className="nav-link">
             <Icon icon="mdi:store" />
-            Negocios
-          </a>
-          <a href="/culture" className="nav-link">
+            Tienda
+          </Link>
+          <Link to="/culture" className="nav-link">
             <Icon icon="mdi:bank" />
             Cultura
-          </a>
-          <a href="/mythical" className="nav-link">
+          </Link>
+          <Link to="/mythical" className="nav-link">
             <Icon icon="mdi:star" />
             Lugares Miticos
-          </a>
+          </Link>
         </div>
       </div>
       <div className="nav-right">
