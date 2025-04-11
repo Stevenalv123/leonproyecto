@@ -65,4 +65,8 @@
     margin: 20px auto;
     padding: 0 10px;
   }
+
+  .cell{
+    font-size: 14px;
+  }
 }
