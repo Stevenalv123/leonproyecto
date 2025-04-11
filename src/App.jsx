@@ -5,6 +5,7 @@ import Home from './pages/home';
 import Tienda from './components/tienda/tienda';
 import Navbar from './components/navbar/navbar';
 import CultureLeon from './components/culturaLeon/culturaleon';
+import Miticos from './components/Miticos/Miticos';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/tienda" element={<Tienda />} />
         <Route path='/culture' element={<CultureLeon />} />
+        <Route path='/mythical' element={<Miticos />}/>
       </Routes>
     </Router>
   );

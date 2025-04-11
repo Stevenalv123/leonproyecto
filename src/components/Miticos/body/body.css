@@ -1,0 +1,94 @@
+.mythical-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.mythical-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 32px;
+}
+
+.sites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.site-card {
+  background: #f8f7ff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.site-icon {
+  width: 48px;
+  height: 48px;
+  background: #6c5ce7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.site-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.site-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.explore-btn, .stories-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+}
+
+.stories-btn {
+  background: transparent;
+  color: #6c5ce7;
+  border: 1px solid #6c5ce7;
+}
+
+.explore-btn:hover {
+  background: #5f51e8;
+}
+
+.stories-btn:hover {
+  background: #f0eeff;
+}
+
+@media (max-width: 768px) {
+  .sites-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mythical-container {
+    margin: 20px auto;
+  }
+}

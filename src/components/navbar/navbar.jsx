@@ -1,31 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import './navbar.css';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <Link to="/" className="nav-brand">Tierra Leonesa</Link>
-        <div className="nav-links">
-          <Link to="/" className="nav-link">
+        <div className="mobile-menu">
+          <Link to="/" className="nav-brand">Tierra Leonesa</Link>
+          <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+            <Icon icon={isOpen ? "mdi:close" : "mdi:menu"} />
+          </button>
+        </div>
+        <div className={`nav-links ${isOpen ? 'active' : ''}`}>
+          <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>
             <Icon icon="mdi:home" />
             Inicio
           </Link>
-          <Link to="/explore" className="nav-link">
-            <Icon icon="mdi:compass" />
-            Explorar
-          </Link>
-          <Link to="/tienda" className="nav-link">
+          <Link to="/tienda" className="nav-link" onClick={() => setIsOpen(false)}>
             <Icon icon="mdi:store" />
             Tienda
           </Link>
-          <Link to="/culture" className="nav-link">
+          <Link to="/culture" className="nav-link" onClick={() => setIsOpen(false)}>
             <Icon icon="mdi:bank" />
             Cultura
           </Link>
-          <Link to="/mythical" className="nav-link">
+          <Link to="/mythical" className="nav-link" onClick={() => setIsOpen(false)}>
             <Icon icon="mdi:star" />
             Lugares Miticos
           </Link>
