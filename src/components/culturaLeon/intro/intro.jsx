@@ -11,9 +11,9 @@ const Intro = () => {
         />
       </div>
       <div className="intro-content">
-        <h1>Discover León's Rich Cultural Heritage</h1>
+        <h1>Descubre la riqueza cultura de Leon</h1>
         <p>
-          Immerse yourself in the vibrant traditions, folklore, and artistic expressions that define León's unique cultural identity.
+           León es uno de los departamentos más dinámicos de Nicaragua, con una economía que combina agricultura, industria, comercio y turismo. León es conocido por sus impresionantes edificios coloniales, su vibrante escena artística y sus hermosas playas de arena blanca. La región también es hogar de numerosos parques nacionales y reservas naturales. El turismo y el comercio son pilares fundamentales en el desarrollo económico de León, Nicaragua. La ciudad, con su riqueza cultural, arquitectónica y natural, se ha convertido en uno de los destinos más visitados del país. A través del turismo, se fomenta la preservación del patrimonio histórico y cultural.
         </p>
       </div>
     </div>
