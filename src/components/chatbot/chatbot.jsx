@@ -47,13 +47,17 @@ const getBotResponse = (message) => {
     return '¡De nada! Estoy aquí para ayudarte. ¿Hay algo más que quieras saber sobre León?';
   }
 
+  if (lowerMessage.includes('leon')) {
+    return 'León, Nicaragua, es una ciudad histórica y culturalmente rica, considerada la capital universitaria del país por albergar la UNAN-León, una de las más antiguas de Centroamérica; fundada en 1524 y trasladada en 1610 por la actividad del volcán Momotombo, León combina arquitectura colonial, como su imponente Catedral Patrimonio de la Humanidad, con una vibrante vida estudiantil y artística reflejada en sus murales, museos y festivales, mientras que sus alrededores ofrecen aventuras como el sandboarding en el Cerro Negro o el descanso en las playas de Las Peñitas, todo bajo un clima cálido y un ambiente lleno de historia y energía.';
+  }
+
   return 'Lo siento, no entiendo tu pregunta. ¿Podrías reformularla? Puedo ayudarte con información sobre la catedral, restaurantes, hoteles y lugares turísticos de León.';
 };
 
   return (
     <div className="chatbot-wrapper">
       <button className="chat-toggle" onClick={() => setIsOpen(!isOpen)}>
-        <Icon icon="line-md:chat" />
+        <Icon icon="mdi:chat" width={24} height={24}/>
       </button>
 
       {isOpen && (
@@ -61,7 +65,7 @@ const getBotResponse = (message) => {
           <div className="chat-header">
             <h3>Asistente virtual de Leon</h3>
             <button onClick={() => setIsOpen(false)}>
-              <Icon icon="line-md:chat-round-twotone" />
+              <Icon icon="mdi:close" />
             </button>
           </div>
 

@@ -34,6 +34,34 @@ const Products = () => {
       image: 'https://i.ibb.co/LsjD4Xf/blusa.jpg',
       description: "Blusa tradicional de mujer con patrones de bordados coloridos.",
     },
+    {
+      id: 5,
+      name: 'Adornos artesanales',
+      price: 100,
+      image: 'https://i.ibb.co/wN0wmb8r/art.jpg',
+      description: "Preciosos adornos hechos por artesanos de Leon.",
+    },
+    {
+      id: 6,
+      name: 'Enchiladitas',
+      price: 20,
+      image: 'https://i.ibb.co/7tMRHJwY/comida.jpg',
+      description: "Deliciosas enchiladitas, tipicas de la ciudad de Leon.",
+    },
+    {
+      id: 7,
+      name: 'Libro Nicaragua TravelGuide 2023',
+      price: 400,
+      image: 'https://i.ibb.co/JjqkPhG2/libro.jpg',
+      description: "Libros de viajes y guias de la ciudad de Leon.",
+    },
+    {
+      id: 8,
+      name: 'Bandera de Leon',
+      price: 250,
+      image: 'https://i.ibb.co/svrM7vmV/bander.jpg',
+      description: "Bandera de tamaño mediano del departamento de Leon",
+    },
   ];
 
   return (

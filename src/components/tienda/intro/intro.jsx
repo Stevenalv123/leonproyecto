@@ -6,7 +6,7 @@ const Intro = () => {
     <div className="store-container">
       <div className="store-header">
         <div className="banner-container">
-          <img src="https://i.ibb.co/pvyKwW7w/camisas.jpg" alt="Banner Tienda" />
+          <img src="https://i.ibb.co/rR0g9Jyc/entas.jpg" alt="Banner Tienda" />
         </div>
         <div className="header-content">
           <h1>Bienvenido a nuestra Tienda en linea</h1>

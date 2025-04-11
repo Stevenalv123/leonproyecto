@@ -1,0 +1,107 @@
+.culture-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.culture-nav {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+  margin-bottom: 32px;
+  overflow-x: auto;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav-item.active {
+  color: #333;
+  border-bottom: 2px solid #6c5ce7;
+}
+
+.traditions-section {
+  margin-top: 40px;
+}
+
+.traditions-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.traditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.tradition-card {
+  background: #f8f7ff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tradition-icon {
+  width: 48px;
+  height: 48px;
+  background: #6c5ce7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.tradition-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.tradition-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.learn-more {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-start;
+  font-size: 14px;
+}
+
+.learn-more:hover {
+  background: #5f51e8;
+}
+
+@media (max-width: 768px) {
+  .culture-nav {
+    gap: 16px;
+  }
+
+  .traditions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tradition-card {
+    padding: 20px;
+  }
+}
