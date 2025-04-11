@@ -14,7 +14,7 @@ const Intro = () => {
       alt: "León Cathedral Exterior"
     },
     {
-      url: "https://i.ibb.co/4nFGfTsB/imagen2.jpg",
+      url: "https://i.ibb.co/mrKkfqNW/imagen3.jpg",
       alt: "Plaza Central de León"
     },
     {
